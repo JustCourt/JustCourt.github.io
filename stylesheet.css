@@ -67,14 +67,14 @@ h6{
 	font-size:36px;
 	margin:0px;
 }
-#navbar{
+.navbar{
 	position:fixed;
 	top:0px;
 	right:0px;
 	left:0px;
 	overflow:hidden;
 }
-#navbar ul{
+.navbar ul{
 	background-color:rgba(243, 249, 251, 1);
 	list-style:none;
 	padding:0;
@@ -82,12 +82,12 @@ h6{
 	text-align:center;
 
 }
-#navbar > ul{
+.navbar > ul{
 	padding-top:10px;
 	height:125px;
 
 }
-#navbar li{
+.navbar li{
 	font-size:16px;
 	width:200px;
 	display:inline-block;
@@ -97,17 +97,17 @@ h6{
 	vertical-align:middle;
 	background-color:rgba(243, 249, 251, 1);
 }
-#navbar a{
+.navbar a{
 	color:rgba(142, 142, 142, 1);
 	display:block;
 	text-decoration:none;
 	font-family:Century Gothic, sans-serif;
 	font-weight:lighter;
 }
-#navbar #icon-bar a{
+.navbar #icon-bar a{
 	display:inline;
 }
-#navbar #icon-bar{
+.navbar #icon-bar{
 	position:relative;
 	left:200px;
 }
@@ -125,29 +125,29 @@ h6{
 	font-family:'Roboto', sans-serif;
 
 }
-#navbar > a{
+.navbar > a{
 	display:none;
 }
-#navbar a:hover{
+.navbar a:hover{
 	color:rgba(78, 176, 218, 1);
 }
 
-#navbar a.active{
+.navbar a.active{
 	background-color:#D8EBF4;
 }
 
 /*Navigation bar sub-menus*/
-#navbar li ul{
+.navbar li ul{
 	position:absolute;
 	display:none;
 	width:200px;
 	font-size:12px;
 }
-#navbar li:hover ul{
+.navbar li:hover ul{
 	display:block;
 	transition: display 0.5s;
 }
-#navbar li ul li{
+.navbar li ul li{
 	display:block;
 	border-top:1px solid #E2E2E2;
 }
@@ -155,18 +155,18 @@ h6{
 /*Mobile Navigation*/
 @media only screen and (max-device-width: 640px)
 {
-	#navbar
+	.navbar
 	{
 		position: relative;
 	}
-	#navbar > a
+	.navbar > a
 		{
 		}
-	#navbar:not ( :target ) > a:first-of-type, #navbar: target > a:last-of-type
+	.navbar:not ( :target ) > a:first-of-type, .navbar: target > a:last-of-type
 		{
 			display:block;
 		}
-	#navbar > ul
+	.navbar > ul
 	{
 		height:auto;
 		display:none;
@@ -174,23 +174,18 @@ h6{
 		left:0;
 		right:0;
 	}
-	#navbar:target > ul
+	.navbar:target > ul
 	{
 		display: block;
 	}
-	#navbar > ul > li
+	.navbar > ul > li
 	{
 		width: 100%;
 		float: none;
 	}
-	#navbar li ul
+	.navbar li ul
 	{
 		position: static;
-	}
-	#navbar #site-title
-	{
-		font:inherit;
-		content:Home;
 	}
 }
 
