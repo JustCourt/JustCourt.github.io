@@ -89,6 +89,21 @@ h6{
 		padding-top:10px;
 		height:125px;
 	}
+	/*Navigation bar sub-menus*/
+	#navbar li ul{
+		position:absolute;
+		display:none;
+		width:200px;
+		font-size:12px;
+	}
+	#navbar li:hover ul{
+		display:block;
+	}
+	#navbar li ul li{
+		display:block;
+		border-top:1px solid #E2E2E2;
+	}
+
 }
 #navbar li{
 	font-size:16px;
@@ -136,20 +151,6 @@ h6{
 	background-color:#D8EBF4;
 }
 
-/*Navigation bar sub-menus*/
-#navbar li ul{
-	position:absolute;
-	display:none;
-	width:200px;
-	font-size:12px;
-}
-#navbar li:hover ul{
-	display:block;
-}
-#navbar li ul li{
-	display:block;
-	border-top:1px solid #E2E2E2;
-}
 
 /*Mobile Navigation Bar*/
 @media only screen and (max-device-width: 480px)
@@ -166,6 +167,7 @@ h6{
 	#navbar
 	{
 		position:relative;
+		width:100%;
 	}
 	h1{
 		margin-top:0px;
