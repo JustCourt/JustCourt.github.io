@@ -153,17 +153,16 @@ h6{
 }
 
 /*Mobile Navigation*/
-@media screen and (max-width: 640px)
+@media only screen and (max-device-width: 640px)
 {
 	.navbar
 	{
 		position: relative;
 	}
-		.navbar > a
+	.navbar > a
 		{
 		}
-		.navbar:not ( :target ) > a:first-of-type,
-		.navbar: target > a:last-of-type
+	.navbar:not ( :target ) > a:first-of-type, .navbar: target > a:last-of-type
 		{
 			display:block;
 		}
