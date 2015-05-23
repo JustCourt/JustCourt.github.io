@@ -155,7 +155,7 @@ h6{
 /*Mobile Navigation Bar*/
 @media only screen and (max-device-width: 480px)
 {
-	#navbar li
+	#navbar > li
 	{
 		display:block;
 		height:40px;
@@ -163,6 +163,7 @@ h6{
 	#navbar li ul
 	{
 		display:block;
+		height:auto;
 	}
 	#navbar
 	{
