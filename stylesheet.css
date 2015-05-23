@@ -155,11 +155,23 @@ h6{
 	#navbar li
 	{
 		display:block;
+		height:40px;
 	}
 	#navbar li ul
 	{
 		display:block;
 	}
+	#navbar
+	{
+		position:relative;
+	}
+	h1{
+		width:100%;
+	}
+	.footer{
+		width:100%;
+	}
+	
 }
 
 .content
