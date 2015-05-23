@@ -173,7 +173,13 @@ h6{
 	h1{
 		margin-top:0px;
 	}
-	
+	#home-links div img{
+		width:450px;
+	}
+	.content img
+	{
+		width:450px;
+	}
 }
 
 .content
@@ -351,7 +357,7 @@ a .site-button{
 	margin:100px;
 }
 #home-links div img{
-	width:320px;;
+	width:320px;
 }
 #home-link p{
 	width:300px;
