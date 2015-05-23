@@ -151,9 +151,9 @@ h6{
 	display:block;
 	border-top:1px solid #E2E2E2;
 }
-/*Mobile Navigation*/
 
-@media only screen and (max-width: 40em)
+/*Mobile Navigation*/
+@media screen and (max-width: 640px)
 {
 	.navbar
 	{
