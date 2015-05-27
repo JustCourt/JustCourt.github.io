@@ -8,17 +8,12 @@ body{
 	color:#515151;
 }
 p{
-	font-size:18px;
-	font-weight:100;
+	font-size:12px;
 }
 a{
 	text-decoration:none;
 	font-weight:bold;
 	color:#489fd7;
-}
-a h1{
-	color:black;
-
 }
 .footer{
 	text-align:center;
@@ -35,18 +30,17 @@ a:hover{
 h1{
 	font-family:Roboto, sans-serif;
 	color:white;
-	font-size:48px;
+	margin-top:0px;
 	display:block;
 	background-color:#67B1D0;
 	margin:0px;
-	margin-top:125px;
 	text-align:center;
-	padding:50px;
+	padding:25px;
 	text-transform:uppercase;
 	overflow:hidden;
 }
 h2{
-	font-size:44px;
+	font-size:40px;
 }
 h3{
 	font-family:Arial Narrow, sans-serif;
@@ -68,42 +62,14 @@ h6{
 	margin:0px;
 }
 
-/*Navigation Bar*/
-#navbar{
-	position:fixed;
-	top:0px;
-	right:0px;
-	left:0px;
-	overflow:hidden;
-}
+
+
 #navbar ul{
 	background-color:rgba(243, 249, 251, 1);
 	list-style:none;
 	padding:0;
 	margin:0;
 	text-align:center;
-}
-@media only screen and (min-device-width:481px)
-{
-	#navbar > ul{
-		padding-top:10px;
-		height:125px;
-	}
-	/*Navigation bar sub-menus*/
-	#navbar li ul{
-		position:absolute;
-		display:none;
-		width:200px;
-		font-size:12px;
-	}
-	#navbar li:hover ul{
-		display:block;
-	}
-	#navbar li ul li{
-		display:block;
-		border-top:1px solid #E2E2E2;
-	}
-
 }
 #navbar li{
 	font-size:16px;
@@ -151,58 +117,27 @@ h6{
 	background-color:#D8EBF4;
 }
 
-
-/*Mobile Navigation Bar*/
-@media only screen and (max-device-width: 480px)
+#navbar > li
 {
-	#navbar > li
-	{
-		display:block;
-		height:40px;
-	}
-	#navbar li ul
-	{
-		display:block;
-		height:auto;
-	}
-	#navbar
-	{
-		position:relative;
-		width:100%;
-	}
-	h1{
-		margin-top:0px;
-	}
-	#home-links img
-	{
-		width:100%;
-	}
-	#home-links div
-	{
-		display:block;
-		margin:50px;
-	}
-	.content .preview img
-	{
-		width:450px;
-	}
-	.content
-	{
-		margin:0px;
-		width:auto;
-	}
-}
-
-.content
-{
-	background-color:white;
-	padding:100px;
-	padding-top:50px;
-	margin:50px;
 	display:block;
-	overflow:hidden;
+	height:40px;
+}
+#navbar li ul
+{
+	display:block;
+	height:auto;
+}
+#navbar
+{
+	position:relative;
+	width:100%;
 }
 
+.content .preview img
+{
+	width:300px;
+	margin:auto;
+}
 
 .address
 {
@@ -232,12 +167,16 @@ h6{
 	display:inline-block;
 }
 
-.content{
+.content
+{
+	background-color:white;
+
+	margin:0px;
+	padding:20px;
+	display:block;
 	overflow:hidden;
-	width: 1250px;
-	margin:auto;
-	padding-bottom:500px;
 }
+
 .content ul{
 	text-decoration:none;
 	list-style:none;
@@ -328,25 +267,25 @@ a .site-button{
 
 .gallery .thumbnails img{
 	display:inline-block;
-	height:50px;
+	height:25px;
 }
 
 .gallery .preview img{
-	width:900px;
+	width:300px;
 }
 
 #home-page{
 	background-color:#67B1D0;
 	display:block;
-	padding:125px 0px 125px 0px;
-	margin-top:125px;
+	padding:50px 0px 50px 0px;
+	margin-top:50px;
 	text-align:center;
 	color:white;
 }
 
 #home-page h2{
 	color:white;
-	font-size:100px;
+	font-size:80px;
 	vertical-align:middle;
 	margin-top:0px;
 }
@@ -364,12 +303,83 @@ a .site-button{
 	text-align:center;
 }
 #home-links div{
-	display:inline-block;
-	margin:100px;
+	display:block;
+	margin:0px;
+	padding-top:50px;
 }
 #home-links div img{
 	width:320px;
 }
-#home-link p{
-	width:300px;
-}
+@media only screen and (min-device-width:600px)
+{
+	/*Navigation Bar*/
+	#navbar{
+		position:fixed;
+		top:0px;
+		right:0px;
+		left:0px;
+		overflow:hidden;
+	}
+	#navbar > ul{
+		padding-top:10px;
+		height:125px;
+	}
+	
+	h1{
+		font-size:48px;
+		margin-top:125px;
+		padding:50px;
+	}
+	h2{
+		font-size:44px;
+	}
+	p{
+		font-size:18px;
+		font-weight:100;	
+	}
+	/*Navigation bar sub-menus*/
+	#navbar li ul{
+		position:absolute;
+		display:none;
+		width:200px;
+		font-size:12px;
+	}
+	#navbar li:hover ul{
+		display:block;
+	}
+	#navbar li ul li{
+		display:block;
+		border-top:1px solid #E2E2E2;
+	}
+	.content 
+	{
+		margin:50px;
+		overflow:hidden;
+		width: 1250px;
+		margin:auto;
+		padding-bottom:500px;
+		padding:100px;
+		padding-top:50px;
+	}
+	.gallery .thumbnails img{
+		display:inline-block;
+		height:50px;
+	}
+
+	.gallery .preview img{
+		width:900px;
+	}
+	#home-page{
+		padding:125px 0px 125px 0px;
+		margin-top:125px;
+	}
+	#home-page h2{
+		font-size:100px;
+	}
+	#home-links div{
+		display:inline-block;
+		margin:100px;
+	}
+	#home-links p{
+		width:300px;
+	}
