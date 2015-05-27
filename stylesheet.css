@@ -73,11 +73,9 @@ h6{
 }
 #navbar li{
 	font-size:16px;
-	width:200px;
-	display:inline-block;
+	display:block;
 	height:40px;
 	line-height:40px;
-	margin-right:-5px;
 	vertical-align:middle;
 	background-color:rgba(243, 249, 251, 1);
 }
@@ -109,24 +107,13 @@ h6{
 	font-family:'Roboto', sans-serif;
 
 }
-#navbar a:hover{
-	color:rgba(78, 176, 218, 1);
-}
+
 
 #navbar a.active{
 	background-color:#D8EBF4;
 }
 
-#navbar > li
-{
-	display:block;
-	height:40px;
-}
-#navbar li ul
-{
-	display:block;
-	height:auto;
-}
+
 #navbar
 {
 	position:relative;
@@ -351,6 +338,30 @@ a .site-button{
 		display:block;
 		border-top:1px solid #E2E2E2;
 	}
+
+	#navbar li{
+		font-size:16px;
+		width:200px;
+		display:inline-block;
+		height:40px;
+		line-height:40px;
+		margin-right:-5px;
+		vertical-align:middle;
+		background-color:rgba(243, 249, 251, 1);
+	}
+	#navbar > li
+	{
+		display:block;
+		height:40px;
+	}
+	#navbar li ul
+	{
+		display:block;
+		height:auto;
+	}
+	#navbar a:hover{
+		color:rgba(78, 176, 218, 1);
+	}
 	.content 
 	{
 		margin:50px;
@@ -383,3 +394,4 @@ a .site-button{
 	#home-links p{
 		width:300px;
 	}
+}
