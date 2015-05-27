@@ -8,7 +8,7 @@ body{
 	color:#515151;
 }
 p{
-	font-size:12px;
+	font-size:14px;
 }
 a{
 	text-decoration:none;
@@ -94,9 +94,8 @@ h6{
 }
 #navbar #site-title{
 	height:116px;
-	width:300px;
 	line-height:28px;
-	margin-top:10px;
+	padding-top:10px;
 }
 
 #navbar #site-title a{
@@ -429,14 +428,14 @@ a .site-button{
 		left:200px;
 	}
 
-
 	.address
 	{
 		margin-left:200px;
 		margin-top:30px;
 	}
 	#navbar #site-title{
-		margin-top:0px;
+		padding-top:0px;
+		width:300px;
 	}
 
 	#navbar #site-title a{
