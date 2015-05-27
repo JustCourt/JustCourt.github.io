@@ -272,6 +272,7 @@ a .site-button{
 	font-size:80px;
 	vertical-align:middle;
 	margin-top:0px;
+	margin-bottom:50px;
 }
 
 #home-page .site-button:hover{
@@ -415,6 +416,7 @@ a .site-button{
 	}
 	#home-page h2{
 		font-size:100px;
+		margin-bottom:83px;
 	}
 	#home-links div{
 		display:inline-block;
