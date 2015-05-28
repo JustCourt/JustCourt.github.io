@@ -213,7 +213,16 @@ h6{
 	display:block;
 	position:relative;
 }
-
+.content .execteam .bio{
+	display:none;
+	font-family:Arial, sans-serif;
+	color:#515151;
+	padding:5px;
+}
+.content .execteam .show-bio{
+	text-decoration:underline;
+	font-size:10px;
+}
 .content #faq span{
 	font-weight:bold;
 }
@@ -401,6 +410,9 @@ a .site-button{
 
 	.content .execteam .anchor{
 		top:-150px;
+	}
+	.content .execteam .show-bio{
+		font-size:12px;
 	}
 	.gallery .thumbnails img{
 		display:inline-block;
