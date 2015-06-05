@@ -69,7 +69,6 @@ h6{
 	list-style:none;
 	padding:0;
 	margin:0;
-	text-align:center;
 	display:block;
 }
 #navbar li{
@@ -77,6 +76,7 @@ h6{
 	display:block;
 	line-height:40px;
 	vertical-align:middle;
+	text-align:center;
 	background-color:rgba(243, 249, 251, 1);
 }
 #navbar a{
@@ -308,23 +308,18 @@ a .site-button{
 {
 	/*Navigation Bar*/
 	#navbar{
-		position:fixed;
-		top:0px;
-		right:0px;
-		left:0px;
-		overflow:hidden;
+		display:block;
 	}
 	#navbar > ul{
 		padding-top:10px;
-		height:125px;
 	}
 	#navbar li{
 		font-size:16px;
-		width:200px;
+		width:100px;
 		display:inline-block;
 		height:40px;
 		line-height:40px;
-		margin-right:-5px;
+		margin-left:-4px;
 		vertical-align:middle;
 		background-color:rgba(243, 249, 251, 1);
 	}
@@ -335,6 +330,15 @@ a .site-button{
 	}
 	#navbar a:hover{
 		color:rgba(78, 176, 218, 1);
+	}
+	#navbar #site-title{
+		padding-top:0px;
+		width:300px;
+		margin-left:5px;
+	}
+
+	#navbar #site-title a{
+		text-align:left;
 	}
 	/*Navigation bar sub-menus*/
 	#navbar li ul{
@@ -348,9 +352,14 @@ a .site-button{
 	}
 	#navbar li ul li{
 		display:block;
+		width:200px;
 		border-top:1px solid #E2E2E2;
 	}
-
+	#navbar #icon-bar{
+		position:relative;
+		left:200px;
+		
+	}
 	/*End Navigation Bar*/
 
 	p{
@@ -359,7 +368,6 @@ a .site-button{
 	}	
 	h1{
 		font-size:48px;
-		margin-top:125px;
 		padding:50px;
 	}
 	h2{
@@ -370,8 +378,6 @@ a .site-button{
 		margin-bottom:0px;
 		font-weight:lighter;
 	}
-
-
 	.content 
 	{
 		margin:50px;
@@ -437,22 +443,12 @@ a .site-button{
 	#home-links p{
 		width:300px;
 	}
-	#navbar #icon-bar{
-		position:relative;
-		left:200px;
-	}
+
 
 	.address
 	{
 		margin-left:200px;
 		margin-top:30px;
 	}
-	#navbar #site-title{
-		padding-top:0px;
-		width:300px;
-	}
 
-	#navbar #site-title a{
-		text-align:left;
-	}
 }
