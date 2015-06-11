@@ -326,7 +326,6 @@ a .site-button{
 	#navbar > li
 	{
 		display:block;
-		height:40px;
 	}
 	#navbar a:hover{
 		color:rgba(78, 176, 218, 1);
@@ -436,12 +435,20 @@ a .site-button{
 		font-size:100px;
 		margin-bottom:83px;
 	}
+	#home-links div a h4{
+		color:#515151;
+		text-decoration:underline;
+	}
 	#home-links div{
 		display:inline-block;
 		margin:100px;
 	}
 	#home-links p{
 		width:300px;
+	}
+	#home-links div a img{
+		width:320px;
+		height:230px;
 	}
 
 
