@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body, html
+	{
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.layout
+	{
+		display: block;
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		overflow: hidden;
+		padding: 0px;
+	}
+	.answer
+	{
+		border: 1px solid black;
+		display: none;
+		height: 40%;
+		width: 40%;
+		margin: 2.5%;
+		background-color: red;
+	}
+	.continue
+	{
+		display:block;
+		height:100%;
+		width:100%;
+		font-size:36px;
+		font-family:Arial;
+		padding:100px;
+	}
+	.end
+	{
+		display:none;
+		height:100%;
+		width:100%;
+		font-size:36px;
+		font-family:Arial;
+		padding:100px;
+	}
+	.answer img
+	{
+		height: 100%;
+		width: 100%;
+
+	}
+	.questionText{
+		display:none;
+	}
+	.answerText{
+		display:none;
+	}
+	#para{
+		color:purple;
+		font-size:36px;
+		font-family:Arial;
+	}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="HOLtest.js"></script>
+
+	
+</script>
+
+</head>
+
+<body>
+<div class="layout">
+	<div class="continue"></div>
+	<div class="end">END</div>
+	<div id="1" class="answer"><img id="i1"></img></div>
+	<div id="2" class="answer"><img id="i2"></img></div>
+	<div id="3" class="answer"><img id="i3"></img></div>
+	<div id="4" class="answer"><img id="i4"></img></div>
+</div>
+
+<p class="questionText" id="q0">Text for Question 1</p>
+<p class="questionText" id="q1">Text for Question 2</p>
+<p class="questionText" id="q2">Text for Question 3</p>
+
+</body>
+
+</html>
