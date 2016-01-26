@@ -3,32 +3,49 @@
 <head>
 <meta charset="UTF-8"/>
 <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script src="HOLtest.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<<script src="HOLtest.js"></script>-
+<script src="phonegap.js"></script> -->
+
 <meta name="viewport" content="width=device-width"/>
-
-	
-
 
 </head>
 
 <body>
-<div class="layout">
-	<div class="continue"></div>
-	<div class="end">END
-		<a id="submit">Submit</a>
-	</div>
-	<div id="1" class="answer"><img id="i1"></img></div>
-	<div id="2" class="answer"><img id="i2"></img></div>
-	<div id="3" class="answer"><img id="i3"></img></div>
-	<div id="4" class="answer"><img id="i4"></img></div>
-	<div id="back">BACK</div>
-</div>
 
-<div class="questionText" id="q0" name="1">Question 1 text</div>
-<div class="questionText" id="q1" name="2">Question 2 text</div>
-<div class="questionText" id="q2" name="3">Question 3 text</div>
+<div data-ng-app="app" data-ng-controller="controller">
 
+	<div class="layout" >
+	
+		<ng-view>
+			
+			<!-- Continue Screen -->
+			<div class="continue" ng-show="continueScreen">
+			{{question}}
+				<div ng-click="gotoAnswers()" >Click to Continue</div>
+			</div>
+			
+			<!-- End Screen -->
+			<div ng-show="end" class="end">
+				END
+				<p id="score"></p>
+			</div>
+			
+			<!-- Answer Screen -->
+			<div ng-show="answerScreen">
+				<div id="1" class="answer" ng-click="chooseAnswer(1)"><img ng-src="{{ imgUrl[0] }}" id="i1"></img></div>
+				<div id="2" class="answer" ng-click="chooseAnswer(2)"><img ng-src="{{ imgUrl[1] }}" id="i2"></img></div>
+				<div id="3" class="answer" ng-click="chooseAnswer(3)"><img ng-src="{{ imgUrl[2] }}" id="i3"></img></div>
+				<div id="4" class="answer" ng-click="chooseAnswer(4)"><img ng-src="{{ imgUrl[3] }}" id="i4"></img></div>
+			</div>
+		</ng-view>
+		
+	</div
+	
 </body>
 
 </html>
