@@ -1,0 +1,122 @@
+.navbar-fixed-top {
+	border: none;
+	color: white;
+}
+
+
+body{
+	font-family:Century Gothic, sans-serif;
+	color:#515151;
+}
+
+
+/* Navbar Title (Where it says University of Toronto Taekwondo Organization) */
+.navbar-inverse .navbar-brand{
+	font-weight:700;
+	font-size:29px;
+	font-family:'Roboto', sans-serif;
+	padding: 15px 0px 15px 0px;
+}
+
+a.anchor {
+	position: relative;
+	top:-50px;
+	display: block;
+	height: 0;
+	width:0;
+}
+
+/* Desktop */
+@media (min-width: 768px){
+	.navbar>.container .navbar-brand {
+	}
+}
+
+.execteam li span{	
+	color:#335078;
+	font-weight:bold;
+	font-family:Trebuchet MS, sans-serif;
+}
+
+.col-md-6 img{
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.panel{
+	border: none;
+}
+
+/* Accordian panels (past exec and FAQ) */
+.col-lg-12 #accordion .panel-default>.panel-heading{
+	background-color:rgb(186, 237, 255);
+}
+
+/* Index Page panels (Below slides)*/
+.col-md-4>.panel-default>.panel-heading{
+	background-color:white;
+	border:none;
+}
+.col-md-4>.panel-default>.panel-heading h4{
+	color:#67B1D0;
+	font-weight:bold;
+	font-size:24px;
+}
+.col-md-4>.panel-default{
+	text-align: center;
+}
+
+.site-button{
+	border-radius:10px;
+	display:inline-block;
+	border:	rgba(78, 176, 218, 1) 2px solid;
+	text-align:center;
+	width:150px;
+	padding:15px 15px 15px 15px;
+	font-weight:lighter;
+	font-size:14px;
+	transition:background-color 0.5s ease;
+	margin:auto;
+}
+
+a .site-button{
+	color:black;
+	background-color:white;
+	transition:background-color 0.5s ease;
+}
+
+.site-button:hover{
+	background-color:rgba(78, 176, 218, 1);
+	color:white;
+	transition:background-color 0.5s ease;
+}
+
+#aboutrow{
+	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam1.jpg");
+	background-size:100%;
+	padding:60px;
+	color:white;
+	font-size:18px;
+	font-family: Arial;
+}
+
+#abouttaekwondo{
+	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam6.jpg");
+	background-size:100%;
+	padding:60px;
+	color:white;
+	font-size:18px;
+	font-family: Arial;	
+}
+
+/* Schedule Title */
+.schedule h1{
+	font-family: Century Gothic, sans-serif;
+	color: #515151;
+	font-weight:bold;
+}
+
+.schedule .event_info{
+	color:#2c2c4b;
+	font-weight:bold;
+}
