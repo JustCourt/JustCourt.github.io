@@ -28,7 +28,8 @@ a.anchor {
 
 /* Desktop */
 @media (min-width: 768px){
-	.navbar>.container .navbar-brand {
+	.information-section{
+		font-size:18px;	
 	}
 }
 
@@ -93,15 +94,13 @@ a .site-button{
 
 #aboutrow{
 	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam1.jpg");
-	background-size:100%;
-	padding:60px;
-	color:white;
-	font-size:18px;
-	font-family: Arial;
 }
 
 #abouttaekwondo{
 	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam6.jpg");
+}
+
+.information-section{
 	background-size:100%;
 	padding:60px;
 	color:white;

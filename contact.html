@@ -8,17 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link type="image/jpg" rel="icon" href="images/icon.jpg"/>
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>UTTO - Contact Us</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Template CSS from http://startbootstrap.com/template-overviews/modern-business/-->
     <link href="css/modern-business.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS (Courtney Siu) -->
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +30,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body>
@@ -42,73 +45,50 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html">UTTO</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="about.html" class="dropdown-toggle" data-toggle="dropdown">About Us<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="about.html#club">The Club</a>
+                            </li>
+                            <li>
+                                <a href="about.html#taekwondo">About Taekwondo</a>
+                            </li>
+                            <li>
+                                <a href="about.html#FAQ">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="about.html#ExecTeam">Exec Team</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="classes.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="classes.html#schedule">Schedule</a>
+                            </li>
+                            <li>
+                                <a href="classes.html#belttesting">Belt Testing</a>
+                            </li>
+                            <li>
+                                <a href="classes.html#competitive">Competitive Team</a>
+                            </li>
+                            <li>
+                                <a href="classes.html#instructors">Instructors</a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="events.html">Events</a>
                     </li>
                     <li>
-                        <a href="services.html">Services</a>
-                    </li>
-                    <li class="active">
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="portfolio-item.html">Single Portfolio Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="blog-home-1.html">Blog Home 1</a>
-                            </li>
-                            <li>
-                                <a href="blog-home-2.html">Blog Home 2</a>
-                            </li>
-                            <li>
-                                <a href="blog-post.html">Blog Post</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="full-width.html">Full Width Page</a>
-                            </li>
-                            <li>
-                                <a href="sidebar.html">Sidebar Page</a>
-                            </li>
-                            <li>
-                                <a href="faq.html">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="404.html">404</a>
-                            </li>
-                            <li>
-                                <a href="pricing.html">Pricing Table</a>
-                            </li>
-                        </ul>
+                        <a href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -120,55 +100,38 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
+        <!-- Page Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Contact
-                    <small>Subheading</small>
+                <h1 class="page-header">Contact Us
                 </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Contact</li>
-                </ol>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Content Row -->
         <div class="row">
-            <!-- Map Column -->
-            <div class="col-md-8">
-                <!-- Embedded Google Map -->
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-            </div>
             <!-- Contact Details Column -->
-            <div class="col-md-4">
+            <div class="col-lg-12">
                 <h3>Contact Details</h3>
                 <p>
-                    3481 Melrose Place<br>Beverly Hills, CA 90210<br>
+                    To stay updated, like us on Facebook! All of our announcements will be made there. You can also send us a message on Facebook if you have any questions.
                 </p>
-                <p><i class="fa fa-phone"></i> 
-                    <abbr title="Phone">P</abbr>: (123) 456-7890</p>
-                <p><i class="fa fa-envelope-o"></i> 
-                    <abbr title="Email">E</abbr>: <a href="mailto:name@example.com">name@example.com</a>
-                </p>
-                <p><i class="fa fa-clock-o"></i> 
-                    <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM</p>
+                    <!-- Facebook Plugin -->
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuofttaekwondo%2F&tabs=messages&width=500&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                    <!-- end -->
+
+                <p>We also have an Instagram! Check out photos and videos of training, events and more by clicking the icon below.
                 <ul class="list-unstyled list-inline list-social-icons">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-linkedin-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+                    <li> <!-- Instagram Badge -->
+                        <a href="https://www.instagram.com/uofttaekwondo/?ref=badge" class="ig-b- ig-b-24"><img src="https://badges.instagram.com/static/images/ig-badge-24.png" alt="Instagram" /></a>
                     </li>
                 </ul>
+                <p> You can also email us using the form below. If you'd really like to talk to us in person, come by one of our practices (schedule is on the <a href="classes.html#schedule">Classes page</a>) and ask to speak to an Exec.
+                <p><i class="fa fa-envelope-o"></i> 
+                    <abbr title="Email">E</abbr>: <a href="mailto:uofttaekwondo@gmail.com">uofttaekwondo@gmail.com</a>
+                </p>
+
             </div>
         </div>
         <!-- /.row -->
@@ -177,7 +140,7 @@
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
             <div class="col-md-8">
-                <h3>Send us a Message</h3>
+                <h3>Send us an Email</h3>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group form-group">
                         <div class="controls">
@@ -219,7 +182,14 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p> 
+                        Copyright &copy 
+                        <script>
+                        var d = new Date();
+                        document.write(d.getFullYear());
+                        </script> 
+                        UTTO
+                    </p>
                 </div>
             </div>
         </footer>
