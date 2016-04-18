@@ -3,9 +3,13 @@
 	color: white;
 }
 
+/* Navbar links */
 .navbar-inverse .navbar-nav>li>a{
 	font-family:'Raleway', sans-serif;
 	color:white;
+}
+.navbar-inverse .navbar-nav>li>a{
+	color:#67B1D0;
 }
 
 body{
