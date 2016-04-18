@@ -30,10 +30,6 @@ a.anchor {
 	max-width:85%;
 }
 
-iframe{
-	max-width:85%;
-}
-
 /* Desktop */
 @media (min-width: 768px){
 	.information-section{
