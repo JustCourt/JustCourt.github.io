@@ -99,12 +99,11 @@ a .site-button{
 #aboutrow{
 	
 	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam1.jpg") !important;
-	background-size:100%;
+	background-size: 100%;
 }
 
-#abouttaekwondo{
-	
-	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam6.jpg") !important;
+#abouttaekwondo{	
+	background:linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.7) ), url("images/compteam6.jpg");
 	background-size:100%;
 }
 
