@@ -26,6 +26,10 @@ a.anchor {
 	width:0;
 }
 
+.error-404 img{
+	max-width:85%;
+}
+
 /* Desktop */
 @media (min-width: 768px){
 	.information-section{
