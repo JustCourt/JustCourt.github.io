@@ -3,6 +3,9 @@
 	color: white;
 }
 
+.navbar-inverse .navbar-nav>li>a{
+	font-family:'Raleway', sans-serif;
+}
 
 body{
 	font-family:Century Gothic, sans-serif;
