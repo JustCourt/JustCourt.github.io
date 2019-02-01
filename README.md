@@ -1,26 +1,44 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/)
+# Source
 
-[Modern Business](http://startbootstrap.com/template-overviews/modern-business/) is a multipurpose, full website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
+This "Source" folder is where all of your files associated with this site will go
+and is considered the root ('/') of your site.
+This is also where all of your pages will be generated when using the [page subgenerator](#Subgenerator).
 
-## Getting Started
+## Pages
 
-To use this template, choose one of the following options to get started:
-* Download the latest release on Start Bootstrap
-* Fork this repository on GitHub
+Pages are the main driver for static sites and also determine your site's routes.
+All page templates (except index.{jade,nunjucks}) should be placed in a folder named by your desired route.
+For example, a contact page would most likely be loaded at the `/contact` route.
+You would acheive this by creating the following structure:
 
-## Bugs and Issues
+```
+└── src
+    └── contact
+        └── index.{jade,nunjucks}
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/modern-business/).
+### Subgenerator
 
-## Creator
+You can easily create new pages using the built-in sub-generator like so:
 
-Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
+```
+yo yeogurt:page about
+```
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+This will create the structure you saw above:
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+```
+└── src
+    └── about
+        └── index.{jade,nunjucks}
+```
 
-## Copyright and License
+So when you boot up your site and go to `/about` you will see your new page.
 
-Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+### Specifying a layout
+
+You can also create a new page that extends from a different layout file than `base.{jade,nunjucks}`.
+
+```
+yo yeogurt:page about --layout=two-col
+```
